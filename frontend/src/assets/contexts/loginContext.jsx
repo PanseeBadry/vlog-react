@@ -14,7 +14,7 @@ const LoginProvider = ({ children }) => {
   const handleLogin = async (userLoggedIn) => {
     // console.log("okkkk") // 1
     try {
-      const response = await axios.post('http://localhost:3000/login',userLoggedIn);
+      const response = await axios.post('https://vlog-react-production.up.railway.app/login',userLoggedIn);
       console.log("in login context",response.data.user) // 3
       if (response.data.token) {
         localStorage.setItem('token', response.data.token);   

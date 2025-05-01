@@ -6,7 +6,7 @@ const AuthContext = createContext();
 
 
 
-const baseUrl = 'http://localhost:3000';
+const baseUrl = 'https://vlog-react-production.up.railway.app';
 const AuthProvider = ({ children }) => {
   const [ loggedInUser,setLoggedInUser] = useState({})
   const token = localStorage.getItem('token')

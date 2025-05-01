@@ -9,7 +9,7 @@ const RegisterProvider = ({ children }) => {
   const handleRegister = async (registeredUser) => {
     try {
       // console.log("registered user",registeredUser)
-      const response = await axios.post('http://localhost:3000/register',registeredUser);
+      const response = await axios.post('https://vlog-react-production.up.railway.app/register',registeredUser);
       if(response.status === 201) {
         toast("Registered successfully");
       }
