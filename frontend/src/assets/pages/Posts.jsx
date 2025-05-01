@@ -2,14 +2,12 @@ import { useContext } from "react";
 import { useNavigate } from "react-router";
 import { AuthContext } from "../contexts/authContext";
 import Post from "../components/Post";
-// import { toast } from "react-toastify";
- // Import the new Post component
+
 
 export default function Posts(props) {
   const { posts, users, handleDeletePost, displayToast } = props;
   const { loggedInUser } = useContext(AuthContext);
   const navigate = useNavigate();
-  // const notify = (toastMessage) => toast(toastMessage);
 
   return (
     <div className=" p-6 w-full bg-gray-50">

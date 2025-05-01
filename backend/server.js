@@ -83,7 +83,6 @@ app.post('/posts', async (req, res) => {
 
 
 
-  // ✅ Edit post
 app.put('/posts/:id', async (req, res) => {
     const { id } = req.params;
     const { title, body, image } = req.body;
@@ -124,7 +123,6 @@ app.put('/posts/:id', async (req, res) => {
   });
 
 
-  // ✅ Delete post
 
   
   
@@ -132,7 +130,6 @@ app.put('/posts/:id', async (req, res) => {
 
 
 
-// ✅ Register (حفظ فعلي في MongoDB)
 app.post('/register', async (req, res) => {
   const { username, email, password, name ,avatar} = req.body;
 
@@ -195,7 +192,7 @@ app.post('/login', async (req, res) => {
     }
   });
   
-  const PORT = process.env.PORT || 3000; // Use PORT from .env or default to 3000
+  const PORT = process.env.PORT || 3000; 
   app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
   });
