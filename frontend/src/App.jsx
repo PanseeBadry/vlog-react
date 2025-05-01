@@ -9,7 +9,7 @@ import AddPost from "./assets/components/AddPost";
 import { useContext, useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
 function App() {
-  const baseUrl = "https://vlog-react-production.up.railway.app/";
+  const baseUrl = "https://vlog-react-production.up.railway.app";
 
   const [posts, setPosts] = useState([]);
   const [users, setUsers] = useState([]);
